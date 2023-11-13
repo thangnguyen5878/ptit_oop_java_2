@@ -39,7 +39,9 @@ Với ___ là same hoặc different
 
 ### Ví dụ
 Input #1 
+
 bài tập không có dữ liệu mẫu
 
 Output #1 
+
 bài tập không có dữ liệu mẫu

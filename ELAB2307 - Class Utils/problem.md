@@ -32,7 +32,9 @@ Một chuỗi kí tự
 Kết quả khi gọi phương thức nêu trên.  
 ### Ví dụ
 Input #1 
+
 bài tập không có dữ liệu mẫu
 
 Output #1 
+
 bài tập không có dữ liệu mẫu

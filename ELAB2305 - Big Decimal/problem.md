@@ -10,10 +10,15 @@ Dữ liệu ra là 0 nếu dữ liệu vào không có phần thập phân.
 
 ### Ví dụ
 Input #1
+```
 2
 3.5 2.1 1.2
 434 331
+```
+
 
 Output #1
+```
 0.8
 0
+```

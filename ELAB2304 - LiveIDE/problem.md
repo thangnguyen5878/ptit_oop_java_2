@@ -32,7 +32,9 @@ rỗng
 Kết quả chạy chương trình sau khi dịch thành công
 ### Ví dụ
 Input #1 
+
 bài tập không có dữ liệu mẫu
 
 Output #1 
+
 bài tập không có dữ liệu mẫu

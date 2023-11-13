@@ -14,11 +14,16 @@ Dòng cuối cùng in ra tổng số đối tượng đã được khởi tạo 
 
 ### Ví dụ
 Input #1 
+```
 Nguyen Vu
 10
 Vu Nguyen
 20
+```
+
 
 Output #1 
+```
 Vu Nguyen
 2
+```
