@@ -1,3 +1,4 @@
+// in progress
 import java.util.*;
 import java.lang.Math;
 
@@ -29,8 +30,6 @@ class HanhTinh {
     public double trongLuongBeMat() {
         return (khoiLuong*g)/(banKinh*banKinh);
     }
-
-    
 
     public double khoiLuongBeMat(double weight) {
         double trongLuongTrenTraiDat = (5.976*Math.pow(10,24)*g)/(6.37814*Math.pow(10,6) * 6.37814*Math.pow(10,6));
