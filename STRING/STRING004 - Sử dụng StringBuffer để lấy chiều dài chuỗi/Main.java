@@ -5,7 +5,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int testcaseNum = sc.nextInt();
         sc.nextLine(); 
-
+        int[]
         Vector<String> strings = new Vector<String>();
 
         for (int t = 0; t < testcaseNum; t++) {

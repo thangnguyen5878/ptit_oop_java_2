@@ -2,26 +2,75 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
-public class Main {
+class Note {
+    private String content;
+    private int id;
+    private String date;
+
+    public Note(int id, String date, String content) {
+        this.id = id;
+        this.date = date;
+        this.content = content;
+    }
+
+    public String toString() {
+        return String.format("%02d %s | %s", id, date, content);
+    }
+}
+
+class Account {
+    private String id;
+    private String name;
+    private ArrayList<Note> notes;
+
+    public Account(String id, String name) {
+        this.id = id;
+        this.name = name;
+        this.notes = new ArrayList<>();
+    }
+
+    public void addNote(String date, String content) {
+        int nextId = notes.size() + 1;
+        Note note = new Note(nextId, date, content);
+        notes.add(note);
+    }
+
+    public void shareNoteWith(Account otherAccount, int noteId) {
+        if (noteId > 0 && noteId <= notes.size()) {
+            Note sharedNote = notes.get(noteId - 1);
+            otherAccount.notes.add(sharedNote);
+        }
+    }
+
+    public void printNotes() {
+        System.out.println("Account: " + name);
+        for (Note note : notes) {
+            System.out.println(note.toString());
+        }
+    }
+}
+
+public class Main2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         int numAccounts = scanner.nextInt();
-        scanner.nextLine(); // Consume the newline
+        scanner.nextLine(); 
 
         HashMap<String, Account> accountMap = new HashMap<>();
 
         for (int i = 0; i < numAccounts; i++) {
             String accountName = scanner.nextLine();
-            Account account = new Account(accountName);
-            accountMap.put(account.getId(), account);
+            String accountId = String.format("%03d", i + 1);
+            Account account = new Account(accountId, accountName);
+            accountMap.put(accountId, account);
         }
 
         while (scanner.hasNextLine()) {
             String line = scanner.nextLine();
 
             if (line.isEmpty()) {
-                break;  // Kết thúc nhập liệu nếu dòng tiếp theo không nhập gì
+                break;  
             }
 
             Scanner lineScanner = new Scanner(line);
@@ -56,59 +105,3 @@ public class Main {
         }
     }
 }
-
-class Note {
-    private String content;
-    private int id;
-    private String date;
-    private static int nextId = 1;
-
-    public Note(String date, String content) {
-        this.id = nextId++;
-        this.date = date;
-        this.content = content;
-    }
-
-    public String toString() {
-        String formatedDate = date.substring(0,3) + " " + date.substring(5,7);
-        return String.format("%02d %s | %s", id, formatedDate, content);
-    }
-}
-
-class Account {
-    private String id;
-    private String name;
-    private ArrayList<Note> notes;
-    private static int nextId = 1;
-
-    public Account(String name) {
-        this.id = String.format("%03d", nextId++);
-        this.name = name;
-        this.notes = new ArrayList<>();
-    }
-
-    public String getId() {
-        return String.format("%03d", Integer.parseInt(id));
-    }
-
-    public void addNote(String date, String content) {
-        Note note = new Note(date, content);
-        notes.add(note);
-    }
-
-    public void shareNoteWith(Account otherAccount, int noteId) {
-        if (noteId > 0 && noteId <= notes.size()) {
-            Note sharedNote = notes.get(noteId - 1);
-            otherAccount.notes.add(sharedNote);
-        }
-    }
-
-    public void printNotes() {
-        System.out.println("Account: " + name);
-        for (Note note : notes) {
-            System.out.println(note.toString());
-        }
-    }
-}
-
-

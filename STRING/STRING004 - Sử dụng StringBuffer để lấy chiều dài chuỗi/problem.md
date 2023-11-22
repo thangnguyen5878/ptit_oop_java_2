@@ -2,7 +2,7 @@
 
 ### Đề bài
 
-Cho một chuỗi`s`, hãy sử dụng Java  StringBuffer để in ra chiều dài của chuỗi`s`đó
+Cho một chuỗi `s`, hãy sử dụng Java  StringBuffer để in ra chiều dài của chuỗi `s` đó
 
 Ví dụ:
 

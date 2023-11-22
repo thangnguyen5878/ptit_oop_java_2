@@ -9,7 +9,7 @@ Cho hai chuỗi`s1`và`s2`, hãy viết chương trình kiểm tra xem chuỗi`s
 
 **Dữ liệu ra**: `false`
 
-**Dữ liệu vào: ** `s1=The tonal churchgoers were Indefinite.``s2=churchgoers`
+**Dữ liệu vào:** `s1=The tonal churchgoers were Indefinite.``s2=churchgoers`
 
 **Dữ liệu ra**: `true`
 

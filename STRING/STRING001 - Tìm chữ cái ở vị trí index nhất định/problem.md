@@ -8,15 +8,15 @@ Cho một chuỗi s và chỉ số index i. Viết một chương trình Java đ
 
 Ví dụ:
 
-Dữ liệu vào:`s=OW12IK``i=1`
+Dữ liệu vào: `s=OW12IK``i=1`
 
-Dữ liệu ra:`The character at position 1 is W`
+Dữ liệu ra: `The character at position 1 is W`
 
   
 
-Dữ liệu vào:`s=VGZ7JMZSL``i=7`
+Dữ liệu vào: `s=VGZ7JMZSL``i=7`
 
-Dữ liệu ra:`The character at position 7 is S`
+Dữ liệu ra: `The character at position 7 is S`
 
 ### Dữ liệu vào
 

@@ -1,4 +1,4 @@
-public  static void main(String[] args) {
+public static void main(String[] args) {
 
 AccountartosAccount =newAccount("Arto's account",100.00);
 

@@ -1,7 +1,7 @@
 ## STRING005 - Đảo chuỗi
 
 ### Đề bài
-Sử dụng`StringBuffer`, tiến hành đảo chuỗi`s`cho trước.
+Sử dụng `StringBuffer`, tiến hành đảo chuỗi `s` cho trước.
 
   
 
@@ -9,7 +9,7 @@ Ví dụ
 
 **Dữ liệu vào**:
 
-`s =Welcome to TechVidvan`
+`s = Welcome to TechVidvan`
 
 **Dữ liệu ra**:
 
